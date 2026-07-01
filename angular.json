@@ -26,7 +26,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              { "glob": ".nojekyll", "input": "src/", "output": "/" }
+              { "glob": ".nojekyll", "input": "src/", "output": "/" },
+              { "glob": "CNAME", "input": "src/", "output": "/" }
             ],
             "styles": [
               "src/styles.scss"
