@@ -1,0 +1,194 @@
+﻿<!-- ===== NAVIGATION ===== -->
+<nav class="nav" [class.nav--scrolled]="scrolled">
+  <div class="nav__inner">
+    <span class="nav__monogram">S &amp; K</span>
+    <ul class="nav__links">
+      <li><a href="#cuenta-regresiva">Cuenta regresiva</a></li>
+      <li><a href="#detalles">Detalles</a></li>
+      <li><a href="#rsvp" class="nav__cta">Confirmar Asistencia</a></li>
+    </ul>
+    <button class="nav__hamburger" (click)="toggleMenu()" [class.open]="menuOpen" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav__mobile" [class.nav__mobile--open]="menuOpen">
+    <a href="#cuenta-regresiva" (click)="menuOpen=false">Cuenta regresiva</a>
+    <a href="#detalles" (click)="menuOpen=false">Detalles</a>
+    <a href="#rsvp" (click)="menuOpen=false">Confirmar Asistencia</a>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero__overlay"></div>
+  <div class="hero__content">
+    <p class="hero__pre">Nos casamos
+    </p>
+    <h1 class="hero__title">Sebas <span class="hero__amp">&amp;</span> Karen</h1>
+    <p class="hero__date">16 &middot; Noviembre &middot; 2026</p>
+    <a href="#detalles" class="btn btn--outline">Ver detalles</a>
+  </div>
+  <div class="hero__scroll-hint">&#8595;</div>
+</section>
+
+<!-- ===== DETALLES ===== -->
+<section class="section" id="detalles">
+  <div class="section__inner">
+    <p class="section__eyebrow">El gran d&#237;a</p>
+    <h2 class="section__title">Detalles de la ceremonia</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="card__icon">&#9901;</div>
+        <h3 class="card__title">Ceremonia &amp; Recepci&#243;n</h3>
+        <p class="card__detail">Casa Kapikua</p>
+        <p class="card__detail">Santa Marta, Colombia</p>
+        <p class="card__detail card__detail--highlight">16 Noviembre 2026 &middot; 15:00 h</p>
+      </div>
+      <div class="card card--accent">
+        <div class="card__icon">&#127958;</div>
+        <h3 class="card__title">C&#243;mo llegar</h3>
+        <p class="card__detail">Casa Kapikua</p>
+        <p class="card__detail">Santa Marta, Magdalena</p>
+        <p class="card__detail card__detail--highlight"><a href="https://maps.google.com/?q=Casa+Kapikua+Santa+Marta" target="_blank" rel="noopener noreferrer" style="color:inherit">&#128205; Ver en Google Maps</a></p>
+      </div>
+      <div class="card">
+        <div class="card__icon">&#127890;</div>
+        <h3 class="card__title">C&#243;digo de vestimenta</h3>
+        <p class="card__detail">Formal</p>
+        <p class="card__detail">Tonos pastel y colores tierra</p>
+        <p class="card__detail card__detail--highlight">Sin color blanco, por favor</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COUNTDOWN ===== -->
+<section class="countdown-section" id="cuenta-regresiva">
+  <div class="countdown-section__overlay"></div>
+  <div class="countdown-section__inner">
+    <p class="section__eyebrow section__eyebrow--light">Cuenta regresiva</p>
+    <h2 class="countdown-section__title">Cada día falta menos para el sí más importante de nuestras vidas...</h2>
+    <div class="countdown">
+      <div class="countdown__block">
+        <span class="countdown__num">{{ countdown.days }}</span>
+        <span class="countdown__label">D&#237;as</span>
+      </div>
+      <span class="countdown__sep">:</span>
+      <div class="countdown__block">
+        <span class="countdown__num">{{ countdown.hours }}</span>
+        <span class="countdown__label">Horas</span>
+      </div>
+      <span class="countdown__sep">:</span>
+      <div class="countdown__block">
+        <span class="countdown__num">{{ countdown.minutes }}</span>
+        <span class="countdown__label">Minutos</span>
+      </div>
+      <span class="countdown__sep">:</span>
+      <div class="countdown__block">
+        <span class="countdown__num">{{ countdown.seconds }}</span>
+        <span class="countdown__label">Segundos</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALERIA ===== -->
+<section class="section section--cream" id="galeria">
+  <div class="section__inner">
+    <p class="section__eyebrow">Momentos</p>
+    <h2 class="section__title">Nuestros recuerdos</h2>
+    <div class="gallery">
+      <div class="gallery__item gallery__item--tall">
+        <div class="gallery__placeholder gallery__placeholder--1">
+          <span>&#128247; Foto 1</span>
+        </div>
+      </div>
+      <div class="gallery__item">
+        <div class="gallery__placeholder gallery__placeholder--2">
+          <span>&#128247; Foto 2</span>
+        </div>
+      </div>
+      <div class="gallery__item">
+        <div class="gallery__placeholder gallery__placeholder--3">
+          <span>&#128247; Foto 3</span>
+        </div>
+      </div>
+      <div class="gallery__item gallery__item--wide">
+        <div class="gallery__placeholder gallery__placeholder--4">
+          <span>&#128247; Foto 4</span>
+        </div>
+      </div>
+      <div class="gallery__item">
+        <div class="gallery__placeholder gallery__placeholder--5">
+          <span>&#128247; Foto 5</span>
+        </div>
+      </div>
+    </div>
+    <p class="gallery__hint">Reemplaza las fotos con tus propias im&#225;genes en <code>src/assets/</code></p>
+  </div>
+</section>
+
+<!-- ===== RSVP ===== -->
+<section class="section" id="rsvp">
+  <div class="section__inner section__inner--narrow">
+    <p class="section__eyebrow">Confirmaci&#243;n</p>
+    <h2 class="section__title">&#191;Nos acompa&#241;as?</h2>
+    <p class="section__subtitle">Por favor confirma tu asistencia antes del <strong>31 de Octubre de 2026</strong>.</p>
+    <form class="rsvp-form" (ngSubmit)="submitRsvp()" #rsvpForm="ngForm" *ngIf="!rsvpEnviado">
+      <div class="form-group">
+        <label for="nombre">Nombre completo *</label>
+        <input id="nombre" type="text" [(ngModel)]="rsvp.nombre" name="nombre" placeholder="Tu nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Correo electr&#243;nico *</label>
+        <input id="email" type="email" [(ngModel)]="rsvp.email" name="email" placeholder="tu@correo.com" required>
+      </div>
+      <div class="form-group">
+        <label for="asistentes">N&#250;mero de acompa&#241;antes</label>
+        <select id="asistentes" [(ngModel)]="rsvp.asistentes" name="asistentes">
+          <option value="0">Solo yo</option>
+          <option value="1">1 acompa&#241;ante</option>
+          <option value="2">2 acompa&#241;antes</option>
+          <option value="3">3 acompa&#241;antes</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>&#191;Asistir&#225;s?</label>
+        <div class="radio-group">
+          <label class="radio-label">
+            <input type="radio" [(ngModel)]="rsvp.asiste" name="asiste" value="si">
+            <span>S&#237;, all&#237; estar&#233; &#127881;</span>
+          </label>
+          <label class="radio-label">
+            <input type="radio" [(ngModel)]="rsvp.asiste" name="asiste" value="no">
+            <span>No podr&#233; asistir &#128542;</span>
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Mensaje para los novios (opcional)</label>
+        <textarea id="mensaje" [(ngModel)]="rsvp.mensaje" name="mensaje" placeholder="Escribe un mensaje de cari&#241;o..." rows="4"></textarea>
+      </div>
+      <button type="submit" class="btn btn--primary btn--full">
+        Confirmar asistencia
+      </button>
+    </form>
+    <div class="rsvp-success" *ngIf="rsvpEnviado">
+      <div class="rsvp-success__icon">&#128140;</div>
+      <h3>&#161;Gracias, {{ rsvp.nombre }}!</h3>
+      <p *ngIf="rsvp.asiste === 'si'">Estamos muy emocionados de verte el 16 de Noviembre en Casa Kapikua. &#161;Ser&#225; un d&#237;a inolvidable en Santa Marta!</p>
+      <p *ngIf="rsvp.asiste === 'no'">Lamentamos que no puedas acompa&#241;arnos, pero te tendremos en nuestros corazones ese d&#237;a. &#128149;</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer__inner">
+    <p class="footer__monogram">S &amp; K</p>
+    <p class="footer__date">16 &middot; Noviembre &middot; 2026</p>
+    <p class="footer__quote">"El amor no se mira, el amor se vive."</p>
+    <p class="footer__copy">&copy; 2026 Sebas &amp; Karen &mdash; Santa Marta, Colombia &#127796;</p>
+  </div>
+</footer>
+

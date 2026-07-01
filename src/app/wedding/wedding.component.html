@@ -1,0 +1,1202 @@
+<!-- ===== NAVIGATION ===== -->
+<nav class="nav" [class.nav--scrolled]="scrolled">
+  <div class="nav__inner">
+    <!-- <a href="#inicio" class="nav__monogram">S &amp; K</a> -->
+    <a href="#inicio" class="nav__monogram" style="width: 5%;"><img src="assets/Fotos Pre-Boda/logoSK.webp" alt="Logo Sebas Karen" /></a>
+
+    <ul class="nav__links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#detalles">Ceremonia</a></li>
+      <li><a href="#codigovestimenta">Código de Vestimenta</a></li>
+      <li><a href="#regalos">Regalos</a></li>
+      <li><a href="#recomendaciones">Recomendaciones</a></li>
+      <li><a href="#desenguayabe">Desenguayabe</a></li>
+      <!-- <li><a href="#confirmarAsistencia">Confirmar Asistencia</a></li> -->
+
+      <!-- <li><a href="#ceremonia">Ceremonia</a></li>
+      <li><a href="#cuenta-regresiva">Cuenta regresiva</a></li>
+      <li><a href="#detalles">Detalles</a></li>-->
+      <li><a href="#rsvp" class="nav__cta">Confirmar Asistencia</a></li>
+    </ul>
+    <button class="nav__hamburger" (click)="toggleMenu()" [class.open]="menuOpen" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav__mobile" [class.nav__mobile--open]="menuOpen">
+    <a href="#inicio" (click)="scrollToSection($event, 'inicio')">Inicio</a>
+    <a href="#detalles" (click)="scrollToSection($event, 'detalles')">Ceremonia</a>
+    <a href="#codigovestimenta" (click)="scrollToSection($event, 'codigovestimenta')">Código de Vestimenta</a>
+    <a href="#regalos" (click)="scrollToSection($event, 'regalos')">Regalos</a>
+    <a href="#recomendaciones" (click)="scrollToSection($event, 'recomendaciones')">Recomendaciones</a>
+    <a href="#desenguayabe" (click)="scrollToSection($event, 'desenguayabe')">Desenguayabe</a>
+    <!-- <a href="#confirmarAsistencia" (click)="menuOpen=false">Confirmar Asistencia</a> -->
+
+    <!-- <a href="#inicio" (click)="menuOpen=false">Inicio</a>
+    <a href="#cuenta-regresiva" (click)="menuOpen=false">Cuenta regresiva</a>
+    <a href="#detalles" (click)="menuOpen=false">Detalles</a> -->
+    <a href="#rsvp" (click)="scrollToSection($event, 'rsvp')">Confirmar Asistencia</a>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="inicio">
+  <div class="hero__overlay"></div>
+  <div class="hero__content">
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p class="hero__pre">¡Nos casamos!</p>
+    <h1 class="hero__title">Sebas <span class="hero__amp">&amp;&nbsp;</span>  Karen</h1>
+    <p class="hero__date">16 &middot; Noviembre &middot; 2026</p>
+    <a href="#detalles" class="btn btn--outline">Ver detalles</a>
+  </div>
+  <div class="hero__scroll-hint">&#8595;</div>
+</section>
+<!-- ===== COUNTDOWN ===== -->
+<section class="countdown-section" id="cuenta-regresiva" >
+  <div class="countdown-section__overlay"></div>
+  <div class="countdown-section__inner">
+    <p class="section__eyebrow section__eyebrow--light" style="color: #000000;">Cuenta regresiva</p>
+    <h2 class="countdown-section__title" style="font-family: var(--ff-serid); font-size: 25px;">Cada día falta menos para el "sí" más importante de nuestras vidas...</h2>
+    <div class="countdown">
+      <div class="countdown__block">
+        <span class="countdown__num">{{ countdown.days }}</span>
+        <span class="countdown__label">D&#237;as</span>
+      </div>
+      <span class="countdown__sep">:</span>
+      <div class="countdown__block">
+        <span class="countdown__num">{{ countdown.hours }}</span>
+        <span class="countdown__label">Horas</span>
+      </div>
+      <span class="countdown__sep">:</span>
+      <div class="countdown__block">
+        <span class="countdown__num">{{ countdown.minutes }}</span>
+        <span class="countdown__label">Minutos</span>
+      </div>
+      <span class="countdown__sep">:</span>
+      <div class="countdown__block">
+        <span class="countdown__num">{{ countdown.seconds }}</span>
+        <span class="countdown__label">Segundos</span>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===== DETALLES Día uno ===== -->
+<section class="section" id="detalles">
+  <div class="section__inner">
+    <!-- <p class="section__eyebrow" style="color:black"><b>El gran d&#237;a - día 1</b></p> -->
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+
+<p class="section__title section__title--days-poem" style="
+    font-family: 'Allura', cursive;
+    font-size: 42px;
+    line-height: 1.4;
+    text-align: center;
+    color: #4A4A4A;
+    white-space: pre-line;
+    font-weight: normal;
+">
+La magia de la conexión,
+la suerte de coincidir,
+y la bendición de un “nosotros”
+</p>
+    <div class="cards cards--days">
+      <div class="card">
+
+<div class="wedding-timeline-item" style="
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+">
+    <!-- Título principal en azul claro y cursiva -->
+    <h2 style="
+        font-family: 'Italianno', cursive !important;
+        color: #56bbf1 !important;
+        font-size: 72px;
+        font-weight: normal;
+        margin: 0 0 15px 0;
+        letter-spacing: 1px;
+    ">Día 1</h2>
+
+    <!-- Frase destacada con el emoji del anillo -->
+<p style="
+    font-family: 'Cormorant Garamond', serif !important;
+    font-size: 26px;
+    font-style: italic; /* El texto se mantiene cursivo */
+    font-weight: 600;
+    color: #000000;
+    margin: 0 0 25px 0;
+">
+    “Sí, acepto
+    <!-- Envolvemos el emoji en un span y le quitamos la fuente especial y la cursiva -->
+    <span style="font-family: serif !important; font-style: normal !important; font-size: inherit; font-weight: normal;">💍</span>”.
+</p>
+
+    <!-- Fecha subrayada -->
+    <p style="
+        font-family: 'Cormorant Garamond', serif !important;
+        font-size: 24px;
+        color: #000000;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        margin: 0 0 20px 0;
+    ">Lunes, 16 de Noviembre</p>
+
+    <!-- Descripción del evento con saltos de línea fluidos -->
+    <p style="
+        font-family: 'Cormorant Garamond', serif !important;
+        font-size: 22px;
+        line-height: 1.5;
+        color: #000000;
+        margin: 0;
+        white-space: pre-line !important;
+    ">Ceremonia frente al mar, cóctel,
+    brindis, cena y pista de baile
+    abierta hasta la madrugada.</p>
+</div>
+
+
+  </div>
+
+<div class="card">
+  <!-- <div class="card__icon">🏖</div> -->
+   <div class="wedding-timeline-item" style="
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+">
+    <!-- Título principal en azul claro y cursiva -->
+    <h2 style="
+        font-family: 'Italianno', cursive !important;
+        color: #56bbf1 !important;
+        font-size: 72px;
+        font-weight: normal;
+        margin: 0 0 15px 0;
+        letter-spacing: 1px;
+    ">Día 2</h2>
+
+    <p style="
+    font-family: 'Cormorant Garamond', serif !important;
+    font-size: 26px;
+    font-style: italic; /* El texto se mantiene cursivo */
+    font-weight: 600;
+    color: #000000;
+    margin: 0 0 25px 0;
+">
+    “Sí, seguimos
+    <!-- Envolvemos el emoji en un span y le quitamos la fuente especial y la cursiva -->
+    <span style="font-family: serif !important; font-style: normal !important; font-size: inherit; font-weight: normal;">😎</span>”.
+</p>
+
+
+    <!-- Fecha subrayada -->
+    <p style="
+        font-family: 'Cormorant Garamond', serif !important;
+        font-size: 24px;
+        color: #000000;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        margin: 0 0 20px 0;
+    ">Martes, 17 de Noviembre</p>
+
+    <!-- Descripción del evento con saltos de línea fluidos -->
+    <p style="
+        font-family: 'Cormorant Garamond', serif !important;
+        font-size: 22px;
+        line-height: 1.5;
+        color: #000000;
+        margin: 0;
+        white-space: pre-line !important;
+    ">Desenguayabe y despedida: un último encuentro más relajado para cerrar con broche de oro.</p>
+</div>
+
+</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DETALLES Día dos ===== -->
+<section class="section" id="detalles">
+
+  <div class="section__inner">
+  <h2 class="section__title">Detalles de la ceremonia</h2>
+
+  <div class="cards" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: stretch;">
+
+    <div class="card" style="
+        background-image: url('assets/Fotos Pre-Boda/Kapikua.webp');
+        flex: 1;
+        min-width: 300px; /* Evita que se colapse en pantallas pequeñas */
+        min-height: 450px; /* Asegura un buen tamaño mínimo si la card 2 tiene poco texto */
+        background-size: cover;
+        background-position: center;
+    "></div>
+
+    <div class="card" style="
+        flex: 1;
+        min-width: 300px;
+        text-align: center;
+        font-family: 'Georgia', serif;
+        padding: 20px;
+        background-color: #ffffff; /* Ajusta el color de fondo si es necesario */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centra el contenido verticalmente dentro de la tarjeta */
+    ">
+
+ <h2 style="
+    font-size: 24px;
+    font-weight: 900;
+    font-family: inherit;
+    color: #000;
+    margin-bottom: 5px;
+    ">
+    Ceremonia & Recepción
+  </h2>
+  <p>&nbsp;</p>
+       <h3 style="
+       font-size: 18px;
+       font-weight: 800;
+       font-family: inherit;
+       color: #000;
+       margin-bottom: 5px;
+       ">
+       Casa Kapikua
+      </h3>
+      <p>
+        Fecha: 16 Noviembre 2026
+      </p>
+      <p>
+        Hora: 15:00 h
+      </p>
+<p>&nbsp;</p>
+<h3 class="card__title" style="margin-bottom: 8px;">
+  <a href="https://maps.google.com/?q=Casa+Kapikua,+Santa+Marta,+Magdalena"
+  target="_blank"
+  rel="noopener noreferrer"
+  style="font-size: 20px; color: #000000; text-decoration: underline; font-weight: normal;">
+  ¿Cómo llegar?
+</a>
+</h3>
+
+<p>
+  Km 20 vía Santa Marta - Ciénaga.
+</p>
+<p>
+  Santa Marta, Colombia.
+</p>
+
+<p>&nbsp;</p>
+      <div class="card__map" style="margin: 0 auto; width: 100%; max-width: 400px; border-radius: 0px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+        <iframe
+          src="https://maps.google.com/maps?q=Casa%20Kapikua,%20Santa%20Marta,%20Magdalena&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          width="100%"
+          height="250"
+          style="border:0; display: block;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+    </div>
+  </div>
+</div>
+</section>
+<section class="section" id="detalles">
+
+    <div class="section__inner">
+  <h2 class="section__title">Itinerario</h2>
+
+
+  <div class="timeline-container">
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <div class="timeline-time-circle">
+        <span>15:00</span>
+      </div>
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3 class="timeline-title">Ceremonia</h3>
+        <p class="timeline-desc">Donde comienza nuestro para siempre.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-time-circle">
+        <span>17:00</span>
+      </div>
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3 class="timeline-title">Cóctel</h3>
+        <p class="timeline-desc">Un refrescante cóctel, deliciosos pasabocas y la mejor compañía mientras disfrutamos del atardecer y la brisa del mar.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-time-circle">
+        <span>18:45</span>
+      </div>
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3 class="timeline-title">Brindis</h3>
+        <p class="timeline-desc">Levantaremos nuestras copas para celebrar el amor y todos los momentos que están por venir.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-time-circle">
+        <span>19:00</span>
+      </div>
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3 class="timeline-title">Cena</h3>
+        <p class="timeline-desc">Una velada para disfrutar buenos sabores, conversaciones inolvidables y muchas sonrisas.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-time-circle">
+        <span>20:30</span>
+      </div>
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3 class="timeline-title">Baile</h3>
+        <p class="timeline-desc">¡La pista de baile nos espera!</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+</section>
+
+<section class="dress-code" style="background-color: white; width: 100%;" id="codigovestimenta">
+    <div class="section__inner">
+
+        <h2 class="section__title">Código de vestimenta</h2>
+
+        <div class="dress-code-subtitle" style="font-family: 'Allura', cursive;">
+            Formal
+        </div>
+
+        <p class="dress-code-description">
+            Queremos una celebración llena de color y personalidad.<br>
+            ¡Ayúdanos a hacerla inolvidable!
+        </p>
+
+        <div class="dress-code-content dress-code-desktop">
+
+            <!-- Columna 1 -->
+            <div class="dress-column left">
+
+                <div class="dress-item">
+                    <img src="assets/iconos/vestido.webp" alt="Vestido">
+                    <div>
+                        <h4>VESTIDO</h4>
+                        <p>
+                            Largos o midi elegantes. Colores vibrantes y estampados
+                            sutiles son bienvenidos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="dress-item">
+                    <img src="assets/iconos/viento.webp" alt="Telas">
+                    <div>
+                        <h4>TELAS</h4>
+                        <p>
+                            Fluidas y ligeras como seda, satín, chifón,
+                            crepé ligero, organza suave o lino.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="dress-item">
+                    <img src="assets/iconos/tacon.webp" alt="Zapatos">
+                    <div>
+                        <h4>ZAPATOS</h4>
+                        <p>
+                            Sandalias elegantes, tacón ancho o bloque,
+                            cuñas o flats sofisticadas.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Columna 2 -->
+            <div class="dress-image">
+                <img src="assets/iconos/vetidoMujer.webp" alt="Vestido formal mujer">
+            </div>
+
+            <!-- Columna 3 -->
+            <div class="dress-image">
+                <img src="assets/iconos/trajeHombre.webp" alt="Traje formal hombre">
+            </div>
+
+            <!-- Columna 4 -->
+            <div class="dress-column right">
+
+                <div class="dress-item">
+                    <img src="assets/iconos/traje.webp" alt="Traje">
+                    <div>
+                        <h4>TRAJE</h4>
+                        <p>
+                            Completo o combinación elegante de blazer y pantalón
+                            en telas ligeras como el lino y la lana tropical ligera.
+                            Colores más recomendados: beige, arena y verde oliva.
+                        </p>
+                    </div>
+                </div>
+
+              <div class="dress-item">
+                  <div class="icon-wrapper">
+                      <img src="assets/iconos/corbata.webp" alt="Corbata" class="icon-corbata">
+                  </div>
+                  <div>
+                      <h4>CORBATA</h4>
+                      <p>Opcional.</p>
+                  </div>
+              </div>
+                <div class="dress-item">
+                    <img src="assets/iconos/zapato.webp" alt="Zapatos">
+                    <div>
+                        <h4>ZAPATOS</h4>
+                        <p>
+                            Mocasines, zapatos de gamuza
+                            o de cuero suaves.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Versión móvil / tablet: flip cards -->
+        <div class="dress-code-mobile">
+
+          <!-- Tarjeta Mujer: frente = imagen, reverso = ítems columna 1 -->
+          <div class="dress-flip-card flip-card" onclick="this.classList.toggle('is-flipped')">
+            <div class="flip-card-inner">
+              <div class="card-front" style="background-image: url('assets/iconos/vetidoMujer.webp');">
+                <span class="flip-hint">Click para ver detalles</span>
+              </div>
+              <div class="card-back dress-card-back">
+                <div class="dress-item">
+                  <img src="assets/iconos/vestido.webp" alt="Vestido">
+                  <div><h4>VESTIDO</h4><p>Largos o midi elegantes. Colores vibrantes y estampados sutiles son bienvenidos.</p></div>
+                </div>
+                <div class="dress-item">
+                  <img src="assets/iconos/viento.webp" alt="Telas">
+                  <div><h4>TELAS</h4><p>Fluidas y ligeras como seda, satín, chifón, crepé ligero, organza suave o lino.</p></div>
+                </div>
+                <div class="dress-item">
+                  <img src="assets/iconos/tacon.webp" alt="Zapatos">
+                  <div><h4>ZAPATOS</h4><p>Sandalias elegantes, tacón ancho o bloque, cuñas o flats sofisticadas.</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tarjeta Hombre: frente = imagen, reverso = ítems columna 4 -->
+          <div class="dress-flip-card flip-card" onclick="this.classList.toggle('is-flipped')">
+            <div class="flip-card-inner">
+              <div class="card-front" style="background-image: url('assets/iconos/trajeHombre.webp');">
+                <span class="flip-hint">Click para ver detalles</span>
+              </div>
+              <div class="card-back dress-card-back">
+                <div class="dress-item">
+                  <img src="assets/iconos/traje.webp" alt="Traje">
+                  <div><h4>TRAJE</h4><p>Completo o combinación elegante de blazer y pantalón en telas ligeras como el lino y la lana tropical ligera. Colores más recomendados: beige, arena y verde oliva.</p></div>
+                </div>
+                <div class="dress-item">
+                  <div class="icon-wrapper"><img src="assets/iconos/corbata.webp" alt="Corbata" class="icon-corbata"></div>
+                  <div><h4>CORBATA</h4><p>Opcional.</p></div>
+                </div>
+                <div class="dress-item">
+                  <img src="assets/iconos/zapato.webp" alt="Zapatos">
+                  <div><h4>ZAPATOS</h4><p>Mocasines, zapatos de gamuza o de cuero suaves.</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="dress-code" style="background-color: white; width: 100%;">
+    <div class="section__inner">
+        <h2 class="section__title">PALETA RESERVADA</h2>
+        <p class="dress-code-description">
+            Hemos reservado algunos tonos especiales para este día:
+        </p>
+
+<div class="palette-container">
+
+      <div class="palette-column">
+        <h3 class="palette-group-title" style="font-family: 'Allura', cursive;">Blanco</h3>
+        <div class="color-row">
+          <span class="color-circle" style="background-color: #ffffff; border: 1px solid #707070;"></span>
+        </div>
+      </div>
+
+      <div class="palette-column" style="flex: 2; min-width: 280px;">
+          <h3 class="palette-group-title" style="font-family: 'Allura', cursive;">Azul Bebé / Azul grisáceo</h3>
+        <div class="color-row">
+          <span class="color-circle" style="background-color: #85c1e9;"></span>
+          <span class="color-circle" style="background-color: #76bcbe;"></span>
+          <span class="color-circle" style="background-color: #92b5c6;"></span>
+          <span class="color-circle" style="background-color: #bde5f2;"></span>
+          <span class="color-circle" style="background-color: #6a9ab1;"></span>
+        </div>
+      </div>
+
+      <!-- <div class="palette-column">
+        <h3 class="palette-group-title" style="font-family: 'Allura', cursive;">Mauve</h3>
+        <div class="color-row">
+          <span class="color-circle" style="background: linear-gradient(135deg, #e1b2cc 0%, #c39cb5 100%); box-shadow: inset 0 0 5px rgba(255,255,255,0.4);"></span>
+          <span class="color-circle" style="background-color: #d2bfc4;"></span>
+        </div>
+      </div> -->
+
+      <div class="palette-column">
+        <h3 class="palette-group-title" style="font-family: 'Allura', cursive;">Mauve</h3>
+        <div class="color-row">
+          <span class="color-circle" style="
+              background-image: url('assets/iconos/fotoTela.webp');
+              background-size: cover;
+              background-position: center;
+              border: 1px solid rgba(0,0,0,0.1); /* Opcional: un borde sutil si la imagen es muy clara */
+          "></span>
+
+          <span class="color-circle" style="background-color: #d2bfc4;"></span>
+        </div>
+      </div>
+
+      <div class="palette-column">
+        <h3 class="palette-group-title" style="font-family: 'Allura', cursive;">Terracota</h3>
+        <div class="color-row">
+          <span class="color-circle" style="background-color: #ca5205;"></span>
+          <span class="color-circle" style="background-color: #e08d28;"></span>
+        </div>
+      </div>
+
+    </div>
+
+    <p style="font-size: 16px; margin-top: 40px; color: #000000; line-height: 1.5; padding: 0 10px;">
+      Los colores mostrados son únicamente una referencia visual. Les agradecemos evitar tonos similares o muy cercanos a esta paleta.
+    </p>
+    </div>
+</section>
+
+<section class="imagen1">
+
+</section>
+
+<!-- ===== Regalos ===== -->
+<section class="section" id="regalos">
+<div class="wedding-gifts-section" style="
+    font-family: 'Cormorant Garamond', serif !important;
+    color: #000000;
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+">
+    <h2 class="section__title">Regalos</h2>
+
+    <p style="
+        font-size: 22px;
+        line-height: 1.5;
+        max-width: 800px;
+        margin: 0 auto 35px auto;
+    ">
+        El día de la ceremonia tendremos una urna para nuestra lluvia de sobres o, si lo prefieres, puedes realizar una transferencia directamente a cualquiera de las siguientes cuentas:
+    </p>
+
+    <div class="gifts-layout">
+      <img src="assets/iconos/Sobre.png" alt="Sobre con corazón" class="gifts-envelope">
+      <ul class="gifts-list" style="font-family: 'inherit', serif;">
+        <li style="margin-bottom: 5px;"><strong>Llave Bre-B</strong> @KALAMO1</li>
+        <li style="margin-bottom: 5px;"><strong>Tag Aval</strong> @BBKLM211</li>
+        <li><strong>Nequi</strong> 3057491711</li>
+      </ul>
+    </div>
+</div>
+</section>
+
+<!-- ===== Recomendaciones ===== -->
+<section class="section" id="recomendaciones">
+  <div class="section__inner">
+    <h2 class="section__title">Recomendaciones</h2>
+
+    <style>
+      /* Contenedor principal: ahora respeta el tamaño natural que tus clases 'card' ya tenían */
+      .flip-card {
+        background-color: transparent;
+        perspective: 1000px; /* Efecto 3D */
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+      }
+
+      /* Contenedor interno que realmente gira */
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        transform-style: preserve-3d;
+      }
+
+      /* Activa el giro al hacer clic */
+      .flip-card.is-flipped .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+
+      /* Propiedades comunes para ambas caras */
+      .card-front, .card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Oculta la cara contraria al girar */
+        backface-visibility: hidden;
+        border-radius: 30px; /* Tus bordes redondeados originales */
+        box-sizing: border-box;
+      }
+
+      /* CARA FRONTAL (Mantiene exactamente tus estilos previos) */
+      .card-front {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: white;
+      }
+
+      /* CARA TRASERA (Donde van las listas temporales) */
+      .card-back {
+        background-color: #f9f6f0;
+        color: #333;
+        transform: rotateY(180deg); /* Inicialmente oculta atrás */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .card-back ul {
+        text-align: left;
+        padding-left: 20px;
+        margin: 0;
+        width: 100%;
+      }
+
+      .card-back h3 {
+        text-align: left;
+        font-weight: bold;
+        margin: 6px 0 4px 0;
+      }
+    </style>
+
+    <div class="recommendations-grid">
+
+      <div class="recommendation-item">
+        <h3 class="recommendation-title">Estadía</h3>
+        <div class="card flip-card" onclick="this.classList.toggle('is-flipped')">
+          <div class="flip-card-inner">
+            <div class="card-front" style="background-image: url('assets/Recomendaciones/Estadia.png');"></div>
+            <div class="card-back">
+              <h3 ><b>Hoteles cercanos (a menos de 10 minutos en vehículo):</b></h3>
+
+              <ul>
+                <li>Decameron Galeón - 550 m</li>
+                <li>GHL Relax Hotel Costa Azul - 2,1 km</li>
+                <li>Marriott Resort Playa Dormida - 5,1 km</li>
+                <li>Zuana Beach Resort - 6 km</li>
+                <li>Hotel Irotama Lago - 7 km</li>
+                <li>Hilton - Pozos Colorados - 7,2 km</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="recommendation-item">
+        <h3 class="recommendation-title">Belleza</h3>
+        <div class="card flip-card" onclick="this.classList.toggle('is-flipped')">
+          <div class="flip-card-inner">
+            <div class="card-front" style="background-image: url('assets/Recomendaciones/Belleza.png');"></div>
+            <div class="card-back">
+              <h3 ><b>Salones de belleza:</b></h3>
+              <ul>
+                <li>Divina Vanidad - <a href="https://www.instagram.com/divinavanidadbeautysalon" target="_blank" rel="noopener noreferrer">@divinavanidadbeautysalon</a></li>
+                <li>Mareiba Salon - <a href="https://www.instagram.com/mareiba_salon" target="_blank" rel="noopener noreferrer">@mareiba_salon</a></li>
+                <li>Hermán Restrepo Peluquería - <a href="https://www.instagram.com/hrpeluqueriaspa" target="_blank" rel="noopener noreferrer">@hrpeluqueriaspa</a></li>
+                <li>Up &amp; Down Salon - <a href="https://www.instagram.com/upanddownsalon" target="_blank" rel="noopener noreferrer">@upanddownsalon</a></li>
+                <li>Mercy Criado Salón - <a href="https://www.instagram.com/mercycriado" target="_blank" rel="noopener noreferrer">@mercycriado</a></li>
+              </ul>
+              &nbsp;
+              <h3 ><b>A domicilio:</b></h3>
+              <ul>
+                <li>Foriu (Maquillaje y peinado a domicilio) - <a href="https://www.instagram.com/foriu_co" target="_blank" rel="noopener noreferrer">@foriu_co</a></li>
+                <li>Katherin Mejia Maquilladora - <a href="https://www.instagram.com/kmakeup_c" target="_blank" rel="noopener noreferrer">@kmakeup_c</a></li>
+                <li>Jherson Kock Makeup - <a href="https://www.instagram.com/jhersonkock" target="_blank" rel="noopener noreferrer">@jhersonkock</a></li>
+                <li>Vanessa Correa - <a href="https://www.instagram.com/vmakeuplab.studio" target="_blank" rel="noopener noreferrer">@vmakeuplab.studio</a></li>
+                <li>Tomas Antonio Melgarejo Castellanos - <a href="https://www.instagram.com/tomasmelgarejo" target="_blank" rel="noopener noreferrer">@tomasmelgarejo</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="recommendation-item">
+        <h3 class="recommendation-title">Transporte</h3>
+        <div class="card flip-card" onclick="this.classList.toggle('is-flipped')">
+          <div class="flip-card-inner">
+            <div class="card-front" style="background-image: url('assets/Recomendaciones/Transporte.png');"></div>
+            <div class="card-back">
+              <h3 ><b>Taxis, Transporte Privado y Alquiler de vehículos:</b></h3>
+              <ul>
+                <li>Estación de Taxis La 17 - <a href="https://www.instagram.com/taxisla17rodadero" target="_blank" rel="noopener noreferrer">@taxisla17rodadero</a></li>
+                <li>Taxis Rodadero bello Horizonte - <a href="https://www.instagram.com/taxirodaderobello" target="_blank" rel="noopener noreferrer">@taxirodaderobello</a></li>
+                <li>Taxicom - <a href="https://taxicom.com.co/" target="_blank" rel="noopener noreferrer">https://taxicom.com.co/</a></li>
+                <li>Taxis Santa Marta - <a href="https://taxisantamarta.com/" target="_blank" rel="noopener noreferrer">https://taxisantamarta.com/</a></li>
+                <li>RentarVictoria Transfers&Tours - <a href="https://www.instagram.com/rentar_victoria__santa_marta" target="_blank" rel="noopener noreferrer">@rentar_victoria__santa_marta</a></li>
+                <li>Oro Verde Agencia de Viajes - <a href="https://www.instagram.com/oroverdeviajes" target="_blank" rel="noopener noreferrer">@oroverdeviajes</a></li>
+                <li>SMR Travel - <a href="https://www.smrtravel.com/" target="_blank" rel="noopener noreferrer">https://www.smrtravel.com/</a></li>
+                <li>Marsol Transportes - <a href="https://www.marsol.com.co/" target="_blank" rel="noopener noreferrer">https://www.marsol.com.co/</a></li>
+                <li>Localiza Rent a Car - <a href="https://www.localiza.com/colombia/es-co" target="_blank" rel="noopener noreferrer">https://www.localiza.com/colombia/es-co</a></li>
+                <li>Car Rent - <a href="https://carrent.com.co/" target="_blank" rel="noopener noreferrer">https://carrent.com.co/</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="recommendation-item">
+        <h3 class="recommendation-title">Gastronomía</h3>
+        <div class="card flip-card" onclick="this.classList.toggle('is-flipped')">
+          <div class="flip-card-inner">
+            <div class="card-front" style="background-image: url('assets/Recomendaciones/Gastronomia.png');"></div>
+            <div class="card-back">
+              <h3 ><b>Gastronomía</b></h3>
+              <ul>
+                <li>Siete Mares - <a href="https://www.instagram.com/sietemaresco" target="_blank" rel="noopener noreferrer">@sietemaresco</a></li>
+                <li>Restaurante Ouzo Parque - <a href="https://www.instagram.com/ouzo.santamarta" target="_blank" rel="noopener noreferrer">@ouzo.santamarta</a></li>
+                <li>Guasimo by Fabian Rodríguez  - <a href="https://www.instagram.com/guasimobyfabianrodriguez" target="_blank" rel="noopener noreferrer">@guasimobyfabianrodriguez</a></li>
+                <li>Restaurante Donde Chucho - <a href="https://www.instagram.com/dondechucho" target="_blank" rel="noopener noreferrer">@dondechucho</a></li>
+                <li>Lulo Café Bar - <a href="https://www.instagram.com/lulocafebar" target="_blank" rel="noopener noreferrer">@lulocafebar</a></li>
+                <li>Heladería GNAM dolce - <a href="https://www.instagram.com/gnam_dolce" target="_blank" rel="noopener noreferrer">@gnam_dolce</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== FOTOS ===== -->
+<<section class="section" id="fotos">
+  <div class="preboda-carousel-container">
+
+    <div class="swiper-container myPrebodaSwiper">
+
+      <div class="swiper-wrapper">
+        <div class="swiper-slide photo-frame" *ngFor="let foto of fotosPreboda" (click)="openPhoto(foto)">
+          <img [src]="foto.url" [alt]="'Foto Preboda ' + foto.id" class="preboda-img" loading="lazy">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== LIGHTBOX ===== -->
+<div class="lightbox-overlay" *ngIf="selectedPhoto" (click)="closePhoto()">
+  <button class="lightbox-close" (click)="closePhoto()" aria-label="Cerrar">&times;</button>
+  <img [src]="selectedPhoto.url" [alt]="'Foto Preboda ' + selectedPhoto.id" class="lightbox-img" (click)="$event.stopPropagation()">
+</div>
+<!-- ===== DETALLES Día dos ===== -->
+<section class="section" id="desenguayabe">
+
+  <div class="section__inner">
+  <h2 class="section__title">Detalles del desenguayabe (Opcional)</h2>
+
+  <div class="cards" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: stretch;">
+
+    <div class="card" style="
+        background-image: url('assets/Fotos Pre-Boda/Perla-Roca.jpg');
+        flex: 1;
+        min-width: 300px; /* Evita que se colapse en pantallas pequeñas */
+        min-height: 450px; /* Asegura un buen tamaño mínimo si la card 2 tiene poco texto */
+        background-size: cover;
+        background-position: center;
+    "></div>
+
+    <div class="card" style="
+        flex: 1;
+        min-width: 300px;
+        text-align: center;
+        font-family: 'Georgia', serif;
+        padding: 20px;
+        background-color: #ffffff; /* Ajusta el color de fondo si es necesario */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centra el contenido verticalmente dentro de la tarjeta */
+    ">
+
+ <h2 style="
+    font-size: 24px;
+    font-weight: 900;
+    font-family: inherit;
+    color: #000;
+    margin-bottom: 5px;
+    ">
+    Desenguayabe & despedida
+  </h2>
+  <p>&nbsp;</p>
+       <h3 style="
+       font-size: 18px;
+       font-weight: 800;
+       font-family: inherit;
+       color: #000;
+       margin-bottom: 5px;
+       ">
+       Perla Roca
+      </h3>
+      <p>
+        Fecha: 17 Noviembre 2026
+      </p>
+      <p>
+        Hora: 11:00 h
+      </p>
+<p>&nbsp;</p>
+<h3 class="card__title" style="margin-bottom: 8px;">
+  <a href="https://maps.google.com/?q=Perla+Roca+Hotel,+Santa+Marta,+Colombia"
+  target="_blank"
+  rel="noopener noreferrer"
+  style="font-size: 20px; color: #000000; text-decoration: underline; font-weight: normal;">
+  ¿Cómo llegar?
+</a>
+</h3>
+
+<p>
+  Bahía Puerto Luz.
+</p>
+<p>
+  Santa Marta, Colombia.
+</p>
+
+<p>&nbsp;</p>
+      <div class="card__map" style="margin: 0 auto; width: 100%; max-width: 400px; border-radius: 0px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+        <iframe
+          src="https://maps.google.com/maps?q=Perla+Roca+Hotel,+Santa+Marta,+Colombia&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          width="100%"
+          height="250"
+          style="border:0; display: block;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+    </div>
+  </div>
+</div>
+</section>
+<!-- ===== Porque una noche no será suficiente ===== -->
+<section class="section" style="text-align: center;">
+  <div class="section__inner" style="max-width: 700px; margin: 0 auto;">
+    <p style="
+        font-family: 'Cormorant Garamond', Georgia, serif;
+        font-size: 26px;
+        font-weight: bold;
+        color: #000;
+        margin: 0 0 6px 0;
+        line-height: 1.4;
+    ">Porque una noche no será suficiente...</p>
+    <p style="
+        font-family: 'Cormorant Garamond', Georgia, serif;
+        font-size: 26px;
+        font-weight: bold;
+        color: #000;
+        margin: 0 0 18px 0;
+        line-height: 1.4;
+    ">Acompáñanos al día siguiente para seguir celebrando frente al mar😎</p>
+    <p style="
+        font-family: 'Allura', cursive;
+        font-size: 30px;
+        color: #4A4A4A;
+        margin: 0 0 28px 0;
+    ">Brunch, piscina, buena música y la mejor compañía.</p>
+    <img src="assets/Fotos Pre-Boda/ImagenDesEnguayabe.png"
+         alt="Desenguayabe día 2"
+         style="max-width: 340px; width: 100%; border-radius: 4px; object-fit: cover; display: block; margin: 0 auto;">
+    <p style="font-size: 18px; color: #000; margin: 0 0 4px 0;">
+      <span style="text-decoration: underline; font-weight: bold;">Código de vestimenta:</span> Blanco total
+          <span class="color-circle2" style="background-color: #ffffff; border: 1px solid #707070;"></span>
+    </p>
+    <p style="font-size: 18px; color: #000; margin: 0 0 28px 0;">Lino, algodón, telas frescas y mucho estilo.</p>
+    <!-- Reemplaza esta imagen por la foto de la fiesta blanca cuando la tengas -->
+  </div>
+</section>
+
+<!-- ===== Datos importantes ===== -->
+<section class="section" style="background-color: white;">
+  <div class="section__inner" style="max-width: 800px; margin: 0 auto;">
+    <h2 class="section__title">Datos importantes</h2>
+    <ul style="
+        font-family: 'Cormorant Garamond', Georgia, serif;
+        font-size: 19px;
+        color: #000;
+        line-height: 1.7;
+        text-align: left;
+        padding-left: 24px;
+        margin: 0 0 0 0;
+    ">
+      <li>Nuestra boda será una celebración exclusiva para adultos.</li>
+      <li>Parqueadero disponible únicamente en casa Kapikua (día 1).</li>
+      <li>Si asistes a ambos eventos, debes marcar las dos opciones en el formulario de confirmación de asistencia incluido en la parte final.</li>
+      <li>Para la época, se espera una temperatura máxima entre los 30 y 32 °C y una temperatura mínima entre los 24 y 26 °C; con posibilidad baja de aguaceros tropicales.</li>
+      <li>Por favor protégete del sol, recuerda que el índice UV sigue siendo alto.</li>
+      <li>Por último, y lo más importante, ¡olvídate de todo y a disfrutar!</li>
+    </ul>
+  </div>
+</section>
+<div style="
+    text-align:center;
+    margin:40px 0;
+    color:#b89b72;
+    font-size:24px;
+">
+    <p class="footer__monogram" style="width:10%; margin:0 auto; text-align:center;">
+    <img src="assets/iconos/logoSK2.png" alt="Logo Sebas Karen" />
+</p>
+</div>
+<!-- ===== COUNTDOWN ===== -->
+<!-- <section class="countdown-section" id="cuenta-regresiva" >
+  <div class="countdown-section__overlay"></div>
+  <div class="countdown-section__inner">
+    <p class="section__eyebrow section__eyebrow--light" style="color: #000000;">Cuenta regresiva</p>
+    <h2 class="countdown-section__title" style="font-family: var(--ff-serid); font-size: 25px;">Cada día falta menos para el "sí" más importante de nuestras vidas...</h2>
+    <div class="countdown">
+      <div class="countdown__block">
+        <span class="countdown__num">{{ countdown.days }}</span>
+        <span class="countdown__label">D&#237;as</span>
+      </div>
+      <span class="countdown__sep">:</span>
+      <div class="countdown__block">
+        <span class="countdown__num">{{ countdown.hours }}</span>
+        <span class="countdown__label">Horas</span>
+      </div>
+      <span class="countdown__sep">:</span>
+      <div class="countdown__block">
+        <span class="countdown__num">{{ countdown.minutes }}</span>
+        <span class="countdown__label">Minutos</span>
+      </div>
+      <span class="countdown__sep">:</span>
+      <div class="countdown__block">
+        <span class="countdown__num">{{ countdown.seconds }}</span>
+        <span class="countdown__label">Segundos</span>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<section class="imagen2">
+
+</section>
+
+<!-- ===== RSVP ===== -->
+<section class="section" id="rsvp">
+  <div class="section__inner section__inner--narrow">
+    <p class="section__eyebrow">Confirmaci&#243;n</p>
+    <h2 class="section__title">&#191;Nos acompa&#241;as?</h2>
+    <p class="section__subtitle" *ngIf="guestName">
+      Por favor confirma tu asistencia antes del <strong>03 de Agosto de 2026</strong>.
+    </p>
+    <p class="section__subtitle" *ngIf="!guestName">
+      Por favor confirma tu asistencia antes del <strong>03 de Agosto de 2026</strong>.
+    </p>
+    <form class="rsvp-form" (ngSubmit)="submitRsvp()" #rsvpForm="ngForm" *ngIf="!rsvpEnviado">
+
+      <!-- Boda -->
+      <div class="form-group">
+        <label>Boda</label>
+        <div class="radio-group">
+          <label class="radio-label">
+            <input type="radio" [(ngModel)]="rsvp.asisteBoda" name="asisteBoda" value="si">
+            <span>S&#237; <span style="color: green;">✔</span></span>
+          </label>
+          <label class="radio-label">
+            <input type="radio" [(ngModel)]="rsvp.asisteBoda" name="asisteBoda" value="no">
+            <span>No <span style="color: red;">✖</span></span>
+          </label>
+        </div>
+      </div>
+      <div class="form-group" *ngIf="rsvp.asisteBoda === 'si' && guestNames.length > 0">
+        <label>Marca qui&#233;n asistir&#225;</label>
+        <div class="checkbox-list">
+          <label class="checkbox-label" *ngFor="let n of guestNames">
+            <input type="checkbox"
+                   [checked]="isGuestSelected(n, rsvp.nombresBoda)"
+                   (change)="toggleGuestName(n, rsvp.nombresBoda)">
+            <span>{{ n }}</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Desenguayabe -->
+      <div class="form-group">
+        <label>Desenguayabe</label>
+        <div class="radio-group">
+          <label class="radio-label">
+            <input type="radio" [(ngModel)]="rsvp.asisteDesenguayabe" name="asisteDesenguayabe" value="si">
+            <span>S&#237; <span style="color: green;">✔</span></span>
+          </label>
+          <label class="radio-label">
+            <input type="radio" [(ngModel)]="rsvp.asisteDesenguayabe" name="asisteDesenguayabe" value="no">
+            <span>No <span style="color: red;">✖</span></span>
+          </label>
+        </div>
+      </div>
+      <div class="form-group" *ngIf="rsvp.asisteDesenguayabe === 'si' && guestNames.length > 0">
+        <label>Marca qui&#233;n asistir&#225;</label>
+        <div class="checkbox-list">
+          <label class="checkbox-label" *ngFor="let n of guestNames">
+            <input type="checkbox"
+                   [checked]="isGuestSelected(n, rsvp.nombresDesenguayabe)"
+                   (change)="toggleGuestName(n, rsvp.nombresDesenguayabe)">
+            <span>{{ n }}</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Restricción alimentaria -->
+      <div class="form-group">
+        <p class="form-subsection-title">Restricci&#243;n alimentaria</p>
+        <select [(ngModel)]="rsvp.restriccion" name="restriccion">
+          <option value="">Sin restricci&#243;n</option>
+          <option value="Vegetariana">Vegetariana</option>
+          <option value="Vegana">Vegana</option>
+          <option value="Sin gluten (Cel&#237;acos)">Sin gluten (Cel&#237;acos)</option>
+          <option value="Sin l&#225;cteos (Intolerancia a la lactosa)">Sin l&#225;cteos (Intolerancia a la lactosa)</option>
+          <option value="Alergia a frutos secos">Alergia a frutos secos</option>
+          <option value="Alergia a Mariscos (Comida de mar)">Alergia a Mariscos (Comida de mar)</option>
+          <option value="Condici&#243;n prediab&#233;tica o diab&#233;tica">Condici&#243;n prediab&#233;tica o diab&#233;tica</option>
+          <option value="Otros">Otros</option>
+        </select>
+      </div>
+      <div class="form-group" *ngIf="rsvp.restriccion === 'Otros'">
+        <label for="restriccionOtros">Especifica</label>
+        <textarea id="restriccionOtros" [(ngModel)]="rsvp.restriccionOtros" name="restriccionOtros" rows="3" placeholder="Cu&#233;ntanos tu restricci&#243;n alimentaria..."></textarea>
+      </div>
+
+      <!-- Mensaje -->
+      <div class="form-group">
+        <label for="mensaje">Mensaje para los novios (opcional)</label>
+        <textarea id="mensaje" [(ngModel)]="rsvp.mensaje" name="mensaje" placeholder="Escribe un mensaje de cari&#241;o..." rows="4"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn--primary btn--full" [disabled]="rsvpClosed" [class.btn--disabled]="rsvpClosed">
+        {{ rsvpClosed ? 'Confirmaciones cerradas' : 'Confirmar asistencia' }}
+      </button>
+    </form>
+
+    <!-- Modal advertencia -->
+    <div class="rsvp-modal-overlay" *ngIf="validationModal" (click)="validationModal = ''">
+      <div class="rsvp-modal" (click)="$event.stopPropagation()">
+        <p class="rsvp-modal__msg">{{ validationModal }}</p>
+        <button class="btn btn--primary" (click)="validationModal = ''">Entendido</button>
+      </div>
+    </div>
+    <div class="rsvp-success" *ngIf="rsvpEnviado">
+      <div class="rsvp-success__icon" *ngIf="rsvp.asisteBoda === 'si' || rsvp.asisteDesenguayabe === 'si'">🌴</div>
+      <div class="rsvp-success__icon" *ngIf="rsvp.asisteBoda === 'no' && rsvp.asisteDesenguayabe === 'no'">🥺</div>
+      <h3>&#161;Gracias!</h3>
+      <p *ngIf="rsvp.asisteBoda === 'si' || rsvp.asisteDesenguayabe === 'si'">Estamos muy emocionados de contar contigo, <br> &#161;nos vemos pronto!</p>
+      <p *ngIf="rsvp.asisteBoda === 'no' && rsvp.asisteDesenguayabe === 'no'">Lamentamos que no puedas acompa&#241;arnos, pero te tendremos en nuestros corazones ese d&#237;a.</p>
+
+      <!-- Resumen de lo que seleccionaron -->
+      <div class="rsvp-summary">
+        <div class="rsvp-summary__row">
+          <span class="rsvp-summary__label">Boda</span>
+          <span class="rsvp-summary__val">{{ rsvp.asisteBoda === 'si' ? 'S\u00ed \u2705' : 'No \u274c' }}</span>
+        </div>
+        <div class="rsvp-summary__row" *ngIf="rsvp.asisteBoda === 'si' && rsvp.nombresBoda.length > 0">
+          <span class="rsvp-summary__label">Asistentes boda</span>
+          <span class="rsvp-summary__val">{{ rsvp.nombresBoda.join(', ') }}</span>
+        </div>
+        <div class="rsvp-summary__row">
+          <span class="rsvp-summary__label">Desenguayabe</span>
+          <span class="rsvp-summary__val">{{ rsvp.asisteDesenguayabe === 'si' ? 'S\u00ed \u2705' : 'No \u274c' }}</span>
+        </div>
+        <div class="rsvp-summary__row" *ngIf="rsvp.asisteDesenguayabe === 'si' && rsvp.nombresDesenguayabe.length > 0">
+          <span class="rsvp-summary__label">Asistentes desenguayabe</span>
+          <span class="rsvp-summary__val">{{ rsvp.nombresDesenguayabe.join(', ') }}</span>
+        </div>
+        <div class="rsvp-summary__row" *ngIf="rsvp.restriccion">
+          <span class="rsvp-summary__label">Restricci&#243;n alimentaria</span>
+          <span class="rsvp-summary__val">{{ rsvp.restriccion === 'Otros' ? rsvp.restriccionOtros : rsvp.restriccion }}</span>
+        </div>
+        <div class="rsvp-summary__row" *ngIf="rsvp.mensaje">
+          <span class="rsvp-summary__label">Mensaje</span>
+          <span class="rsvp-summary__val">{{ rsvp.mensaje }}</span>
+        </div>
+      </div>
+
+      <button class="btn btn--outline rsvp-edit-btn" (click)="editRsvp()" [disabled]="rsvpClosed" [class.btn--disabled]="rsvpClosed">
+        &#9998; Editar respuesta
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BOTÓN MÚSICA FIJO ===== -->
+<button class="music-btn" (click)="toggleMute()" [attr.aria-label]="isMuted ? 'Activar música' : 'Silenciar música'" [class.music-btn--muted]="isMuted">
+  <!-- Icono sonido activo -->
+  <svg *ngIf="!isMuted" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+    <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+    <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+  </svg>
+  <!-- Icono silenciado -->
+  <svg *ngIf="isMuted" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+    <line x1="23" y1="9" x2="17" y2="15"/>
+    <line x1="17" y1="9" x2="23" y2="15"/>
+  </svg>
+</button>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer__inner">
+<p class="footer__monogram" style="width:5%; margin:0 auto; text-align:center;">
+    <img src="assets/Fotos Pre-Boda/logoSK.webp" alt="Logo Sebas Karen" />
+</p>
+<p>&nbsp;</p>
+    <p class="footer__date">16 &middot; Noviembre &middot; 2026</p>
+    <p class="footer__quote">"El inicio de nuestro para siempre."</p>
+    <p class="footer__copy">&copy; 2026 Sebas &amp; Karen &mdash; Santa Marta, Colombia</p>
+  </div>
+</footer>
+

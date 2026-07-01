@@ -1,0 +1,184 @@
+﻿// =============================================
+//  LANDING — Video intro page
+// =============================================
+
+.landing {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #faf6f1;
+  overflow: hidden;
+  padding: 2rem 1rem 3rem;
+}
+
+// =============================================
+//  TRANSITION CURTAIN (white fade-in)
+// =============================================
+.landing__curtain {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: #fff;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.85s ease;
+
+  &--open {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+// =============================================
+//  VIDEO
+// =============================================
+.landing__video-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
+  background: #000;
+
+  // Subtle border
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    border: 1px solid rgba(201, 132, 122, 0.3);
+    pointer-events: none;
+  }
+}
+
+.landing__video {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 70vh;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+// =============================================
+//  PLAY HINT
+// =============================================
+.landing__play-hint {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 16px;
+  transition: opacity 0.4s;
+  color: #fff;
+  gap: 0.75rem;
+
+  p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    opacity: 0.9;
+  }
+
+  &--hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.landing__play-icon {
+  width: 64px;
+  height: 64px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  padding-left: 4px;
+  backdrop-filter: blur(4px);
+  animation: pulse 2s infinite;
+}
+
+// =============================================
+//  GUEST NAME
+// =============================================
+.landing__name-block {
+  margin-top: 2.5rem;
+  text-align: center;
+  animation: fadeUp 0.8s ease 0.3s both;
+}
+
+.landing__for {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #c9847a;
+  margin-bottom: 0.5rem;
+}
+
+.landing__guest {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.8rem, 7vw, 2.8rem);
+  font-weight: 300;
+  font-style: italic;
+  color: #2c2421;
+  line-height: 1.2;
+}
+
+// =============================================
+//  MONOGRAM & DATE
+// =============================================
+.landing__monogram {
+  position: absolute;
+  top: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #c9847a;
+  letter-spacing: 0.15em;
+  opacity: 0.7;
+  white-space: nowrap;
+}
+
+.landing__date {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #9e7a42;
+  opacity: 0.6;
+  white-space: nowrap;
+}
+
+// =============================================
+//  ANIMATIONS
+// =============================================
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255,255,255,0.4); }
+  50%       { transform: scale(1.06); box-shadow: 0 0 0 12px rgba(255,255,255,0); }
+}
+

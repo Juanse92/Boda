@@ -1,0 +1,40 @@
+﻿<div class="landing" [class.landing--transitioning]="transitioning">
+
+  <!-- Petals / floral overlay for transition -->
+  <div class="landing__curtain" [class.landing__curtain--open]="transitioning"></div>
+
+  <!-- Video wrapper -->
+  <div class="landing__video-wrap" (click)="onVideoClick()">
+    <video
+      #videoEl
+      class="landing__video"
+      src="assets/d_b_d_b_f_e_c_f_fmp_.mp4"
+      playsinline
+      muted
+      preload="auto">
+    </video>
+
+    <!-- Play hint shown when video is not playing -->
+    <div class="landing__play-hint" [class.landing__play-hint--hidden]="playing">
+      <div class="landing__play-icon">&#9654;</div>
+      <p>Toca para abrir tu invitaci&#243;n</p>
+    </div>
+  </div>
+
+  <!-- Guest name -->
+  <div class="landing__name-block" *ngIf="guestName">
+    <span class="landing__for">Con todo nuestro amor para</span>
+    <h2 class="landing__guest">{{ guestNameFormatted }}</h2>
+  </div>
+
+  <div class="landing__name-block" *ngIf="!guestName">
+    <span class="landing__for">Sebas &amp; Karen</span>
+    <h2 class="landing__guest">Te invitan a su boda</h2>
+  </div>
+
+  <!-- Monogram watermark -->
+  <div class="landing__monogram">S &amp; K</div>
+  <p class="landing__date">16 &middot; Noviembre &middot; 2026</p>
+
+</div>
+

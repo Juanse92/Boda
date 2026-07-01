@@ -1,0 +1,105 @@
+/* =============================================
+   GLOBAL STYLES — Wedding Invitation
+   ============================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  color-scheme: only light; /* 'only' prohíbe a Edge/Chrome forzar tema oscuro */
+
+  --color-blush:    #f0d9d0;
+  --color-rose:     #c9847a;
+  --color-rosedark: #9e5c55;
+  --color-gold:     #c9a96e;
+  --color-golddark: #9e7a42;
+  --color-cream:    #faf6f1;
+  --color-white:    #ffffff;
+  --color-dark:     #2c2421;
+  --color-dark2:     #000000;
+  --color-gray:     #7a6e6b;
+  --color-azulbaby:    #89CFF0;
+  --color-azulbabydark:    #5DADE2;
+  --color-lightyellow:    #fddfb5;
+  --color-cafedark:    #36312a;
+  --color-cafe:    #837869;
+
+  --ff-serif:  'Cormorant Garamond', serif;
+  --ff-sans:   'Montserrat', sans-serif;
+  --ff-cursive:  'Italianno', cursive;
+  --ff-tthoves: 'TTHoves', serif;
+  --ff-glacial: 'Glacial Indifference', sans-serif;
+
+
+  --max-w: 1100px;
+  --section-pad: 1rem 1.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  color-scheme: only light;
+}
+
+/* Bloqueo explícito de Force Dark — Samsung Browser aplica filter:invert() a toda la página */
+@media (prefers-color-scheme: dark) {
+  :root { color-scheme: only light; }
+
+  /* Cancelamos el filtro que Samsung Browser inyecta */
+  html {
+    filter: none !important;
+    background-color: #f7eed8 !important;
+    color: #2c2421 !important;
+  }
+  body {
+    filter: none !important;
+    background-color: #f7eed8 !important;
+    color: #2c2421 !important;
+  }
+
+  /* Restauramos todos los contenedores principales */
+  section, div, header, footer, nav, main, article, aside {
+    filter: none !important;
+    background-color: unset;
+    color: unset;
+  }
+
+  /* Evitamos que Samsung invierta las imágenes */
+  img, video, canvas, svg {
+    filter: none !important;
+  }
+}
+
+body {
+  font-family: var(--ff-sans);
+  color: var(--color-dark);
+  // background: var(--color-white);
+  line-height: 1.7;
+  overflow-x: hidden;
+
+background-color: #f7eed8;
+  /* Esto genera un ruido visual muy suave que rompe con el blanco plano */
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.1'/%3E%3C/svg%3E");
+
+}
+
+h1, h2, h3 {
+  font-family: var(--ff-serif);
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
