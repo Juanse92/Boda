@@ -1,4 +1,4 @@
-﻿import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { BodaSheetsService } from '../services/boda-sheets.service';
 
@@ -53,7 +53,7 @@ export class LandingComponent implements OnInit {
 
       // Stop at exactly 3 seconds
       const onTime = () => {
-        if (video.currentTime >= 5) {
+        if (video.currentTime >= 8) {
           video.pause();
           video.removeEventListener('timeupdate', onTime);
           this.startTransition();

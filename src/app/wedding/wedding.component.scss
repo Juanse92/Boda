@@ -1052,7 +1052,8 @@ $bp-lg: 1024px;
 }
 
 .timeline-title {
-  font-family: 'Allura', cursive;
+      font-family: 'Cormorant Garamond', cursive;
+    font-style: italic;
   font-size: 36px;
   font-weight: normal;
   margin: 0;
@@ -1438,7 +1439,7 @@ $bp-lg: 1024px;
     color-scheme: light;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
-    margin-top: 20px;
+    vertical-align: middle;
   }
 
   /* ==========================================
@@ -1486,12 +1487,27 @@ $bp-lg: 1024px;
   }
 
   .recommendation-title {
-    font-family: 'Allura', cursive;
-    font-size: 28px;
+    font-family: 'Cormorant Garamond', cursive;
+    font-style: italic;    font-size: 26px;
     font-weight: normal;
     color: var(--color-dark);
     margin: 0 0 8px 0;
     text-align: center;
+  }
+
+  /* Botón "Ver más" - oculto en escritorio, visible en móvil */
+  .card-expand-btn {
+    display: none;
+    margin-top: 14px;
+    padding: 6px 22px;
+    background: transparent;
+    border: 1px solid #999;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    cursor: pointer;
+    color: #333;
+    flex-shrink: 0;
   }
 
   /* Card se ajusta al tamaño de la imagen */
@@ -1531,6 +1547,35 @@ $bp-lg: 1024px;
     .recommendations-grid {
       grid-template-columns: 1fr; /* 1 columna en móvil */
       gap: 16px;
+    }
+
+    /* Botón "Ver más" visible en móvil */
+    .card-expand-btn {
+      display: block;
+    }
+
+    /* Cuando la tarjeta está volteada Y expandida: layout plano para mostrar todo el contenido */
+    .recommendations-grid .card.is-flipped.expanded {
+      aspect-ratio: unset !important;
+      overflow: visible !important;
+    }
+
+    .recommendations-grid .card.is-flipped.expanded .flip-card-inner {
+      position: relative !important;
+      height: auto !important;
+      transform: none !important;
+    }
+
+    .recommendations-grid .card.is-flipped.expanded .card-front {
+      display: none !important;
+    }
+
+    .recommendations-grid .card.is-flipped.expanded .card-back {
+      position: relative !important;
+      height: auto !important;
+      transform: none !important;
+      -webkit-backface-visibility: visible !important;
+      backface-visibility: visible !important;
     }
   }
 
